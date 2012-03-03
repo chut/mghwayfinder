@@ -11,7 +11,6 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-#hello kevin
 public class FinalProjectActivity extends Activity {
     
 	private  final int INFINITY = Integer.MAX_VALUE;
