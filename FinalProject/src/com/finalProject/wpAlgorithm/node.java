@@ -5,12 +5,12 @@ import java.util.ArrayList;
 public class node {
 	private static final int INFINITY = Integer.MAX_VALUE;
 	private int x, y;													//coordinates on a map
-	private char name;													//name of node
+	private String name;													//name of node
 	private ArrayList<node> neighbors = new ArrayList<node>();			//corresponding connections
 	private node pNode = null;											//previous node in the shortest path, initialized to null
 	private int d = INFINITY;											//d is the shortest distance from the starting point to this node, initialized to "infinity"
 	
-	public node(char n, int x, int y){
+	public node(String n, int x, int y){
 		this.x = x;
 		this.y = y;
 		this.name = n;
@@ -49,7 +49,7 @@ public class node {
 	}
 	
 	public String toString(){
-		return String.valueOf(name);
+		return name;
 	}
 	
 	public void reset(){

@@ -2,8 +2,12 @@ import java.util.ArrayList;
 
 public class wpAlgorithm {
 	private static final int INFINITY = Integer.MAX_VALUE;
-	static node A, B, C, D, E, F, G, H, I;								//individual nodes			(used for example)
-	static node n108Q, n108P_0, n108P, n108A1_0, n108A1_1, n108A1_2, n108A1_3, n108A1_4, n108A1_5, n108A1_6, n108A1_7, n108A1_8, n108A1_9, n108A1_10, n108A1_11, n108A1_12, n108O, n108L, n108K, n108I, n108J, nT1, nT2, n108C, n108D, n108G, n108B, n108E, n108F, n108H, n108, n108_0, n108_1, n108_2, n100C1, n100C2, nEL;
+	
+	static node n108Q, n108P_0, n108P, n108A1_0, n108A1_1, n108A1_2, 
+	n108A1_3, n108A1_4, n108A1_5, n108A1_6, n108A1_7, n108A1_8, n108A1_9, 
+	n108A1_10, n108A1_11, n108A1_12, n108O, n108L, n108K, n108I, n108J, nT1, 
+	nT2, n108C, n108D, n108G, n108B, n108E, n108F, n108H, n108, n108_0, n108_1, 
+	n108_2, n100C1, n100C2, nEL;
 
 	static ArrayList<node> MAP = new ArrayList<node>();					
 	
@@ -86,42 +90,6 @@ public class wpAlgorithm {
 		return out;
 	}
 	
-	public static void createMap(){
-		
-		// INITIALIZING THE NODES FOR THE MAP <-> THIS COULD BE LOOPED OUT OF A DB
-		A = new node("A",0,0);
-		B = new node("B",0,1);
-		C = new node("C",1,1);
-		D = new node("D",1,3);
-		E = new node("E",2,1);
-		F = new node("F",2,0);
-		G = new node("G",1,0);
-		H = new node("H",0,3);
-		I = new node("I",0,4);
-		
-		//CREATING CONNECTIONS BETWEEN NODES
-		A.addNeighbor(B);
-		B.addNeighbor(A);
-		//B.addNeighbor(C);
-		B.addNeighbor(H);
-		//C.addNeighbor(B);
-		C.addNeighbor(D);
-		C.addNeighbor(E);
-		D.addNeighbor(C);
-		D.addNeighbor(E);
-		D.addNeighbor(H);
-		E.addNeighbor(C);
-		E.addNeighbor(D);
-		E.addNeighbor(F);
-		F.addNeighbor(E);
-		F.addNeighbor(G);
-		G.addNeighbor(F);
-		H.addNeighbor(B);
-		H.addNeighbor(D);
-		H.addNeighbor(I);
-		I.addNeighbor(H);
-		
-	}
 	
 	public static void createMap2(){
 		

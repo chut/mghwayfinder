@@ -18,7 +18,6 @@
         android:id="@+id/goButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="ff0066ff"
         android:text="GO!" />
     
     <TextView
