@@ -14,6 +14,10 @@ import android.widget.TextView;
 
 public class FinalProjectActivity extends Activity {
     
+	//hello git, its me calum
+	//are you there?
+	
+	
 	private  final int INFINITY = Integer.MAX_VALUE;
 	node n108Q, n108P_0, n108P, n108A1_0, n108A1_1, n108A1_2, 
 	n108A1_3, n108A1_4, n108A1_5, n108A1_6, n108A1_7, n108A1_8, n108A1_9, 
